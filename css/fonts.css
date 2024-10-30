@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'Seat Meta Normal Roman';
+    src: url('../fonts/seatmnr.eot');
+    src: url('../fonts/seatmnr.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/seatmnr.woff') format('woff'),
+         url('../fonts/seatmnr.ttf') format('truetype'),
+         url('../fonts/seatmnr.svg#Seat Meta Normal Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Seat Meta Black Italic';
+    src: url('../fonts/semebki.eot');
+	src: url('../fonts/semebki.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/semebki.woff') format('woff'),
+         url('../fonts/semebki.ttf') format('truetype'),
+         url('../fonts/semebki.svg#Seat Meta Black Italic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Seat Meta Black Roman';
+    src: url('../fonts/semebkr.eot');
+	src: url('../fonts/semebkr.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/semebkr.woff') format('woff'),
+         url('../fonts/semebkr.ttf') format('truetype'),
+         url('../fonts/semebkr.svg#Seat Meta Black Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Seat Meta Medium Roman';
+    src: url('../fonts/sememr.eot');
+    src: url('../fonts/sememr.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/sememr.woff') format('woff'),
+         url('../fonts/sememr.ttf') format('truetype'),
+         url('../fonts/sememr.svg#Seat Meta Medium Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Seat Meta Bold Roman';
+    src: url('../fonts/semebr.eot');
+    src: url('../fonts/semebr.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/semebr.woff') format('woff'),
+         url('../fonts/semebr.ttf') format('truetype'),
+         url('../fonts/semebr.svg#Seat Meta Bold Roman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+  font-family: 'VideoJS';
+  src: url('../fonts/vjs.eot');
+  src: url('../fonts/vjs.eot?#iefix') format('embedded-opentype'), 
+       url('../fonts/vjs.woff') format('woff'), 
+       url('../fonts/vjs.ttf') format('truetype');
+  /*
+  src: url('/content/medialib/seat/market_master/seat-events/motorshows/2014/geneva-motorshow/assets/font/vjs-eot/_jcr_content/renditions/rendition.file/vjs.eot');
+  src: url('/content/medialib/seat/market_master/seat-events/motorshows/2014/geneva-motorshow/assets/font/vjs-eot/_jcr_content/renditions/rendition.file/vjs.eot?#iefix') format('embedded-opentype'), 
+       url('/content/medialib/seat/market_master/seat-events/motorshows/2014/geneva-motorshow/assets/font/vjs-woff/_jcr_content/renditions/rendition.file/vjs.woff') format('woff'), 
+      url('/content/medialib/seat/market_master/seat-events/motorshows/2014/geneva-motorshow/assets/font/vjs-ttf/_jcr_content/renditions/rendition.file/vjs.ttf') format('truetype');
+  */
+  font-weight: normal;
+  font-style: normal;
+}

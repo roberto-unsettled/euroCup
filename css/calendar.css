@@ -1,0 +1,436 @@
+.anti-alias {
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+.comunArrows {
+  width: 0;
+  height: 0;
+  position: relative;
+  line-height: 0px;
+}
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.hide {
+  display: none;
+}
+/*
+@imgCircuit1=					'../img/calendar/circuit1.jpg';
+@imgCircuit2=					'../img/calendar/circuit2.jpg';
+@imgBackBottom=					'../img/calendar/backBottom.png';
+
+@imgBackBottom=					'{img.calendar.backbottom}';
+@imgCircuit1=					'{img.calendar.circuit1}';
+@imgCircuit2=					'{img.calendar.circuit2}';
+*/
+#theCalendar .content.header {
+  margin-bottom: 25px;
+}
+#theCalendar #circuits {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  height: 342px;
+  list-style: none outside none;
+  background-image: url('../img/calendar/circuit1.jpg');
+  
+}
+#theCalendar #circuits li {
+  list-style: none outside none;
+  display: none;
+  float: left;
+  width: 784px;
+  height: 342px;
+  background: center center transparent no-repeat;
+  padding: 0 88px;
+  position: relative;
+}
+#theCalendar #circuits li .title {
+  overflow: hidden;
+  width: 488px;
+  color: #ffffff;
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+  display: inline-block;
+  float: left;
+  margin: 36px 0 26px 0;
+}
+#theCalendar #circuits li .title .date {
+  font-size: 53px;
+  line-height: 68px;
+  float: left;
+  border: none;
+  width: 100%;
+  margin: 0 0 0 0;
+  padding: 0;
+}
+#theCalendar #circuits li .title .date span {
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+}
+#theCalendar #circuits li .title .name {
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+  font-size: 38px;
+  line-height: 38px;
+  margin-bottom: 4px;
+}
+#theCalendar #circuits li .title .alias {
+  font-size: 32px;
+  line-height: 38px;
+  font-family: 'Seat Meta Normal Roman', Arial, Helvetica, sans-serif;
+}
+#theCalendar #circuits li .records {
+  width: 388px;
+  display: block;
+  float: left;
+  clear: left;
+  font-family: 'Seat Meta Normal Roman', Arial, Helvetica, sans-serif;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+}
+#theCalendar #circuits li .records dl {
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: 7px;
+}
+#theCalendar #circuits li .records dl dt {
+  margin: 0 4px 0 0;
+}
+#theCalendar #circuits li .records dl dt,
+#theCalendar #circuits li .records dl dd {
+  display: inline-block;
+  float: left;
+  font-family: 'Seat Meta Normal Roman', Arial, Helvetica, sans-serif;
+}
+#theCalendar #circuits li .records dl dd {
+  margin: 0;
+}
+#theCalendar #circuits li .schedule {
+  position: absolute;
+  top: 35px;
+  right: 88px;
+  display: block;
+  width: 250px;
+}
+#theCalendar #circuits li .schedule h3 {
+  display: block;
+  margin: 0;
+  font-size: 20px;
+  line-height: 30px;
+  background: #ff4720;
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #ffffff;
+  padding: 5px 0;
+  border-bottom: 1px solid #ededed;
+}
+#theCalendar #circuits li .schedule dl {
+  margin: 0;
+  background: #ffffff;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #ededed;
+  height: 47px;
+  line-height: 50px;
+  color: #42474c;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 1px;
+  -webkit-border-bottom-left-radius: 1px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 1px;
+  -moz-border-radius-bottomleft: 1px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#theCalendar #circuits li .schedule dl dt,
+#theCalendar #circuits li .schedule dl dl {
+  display: inline-block;
+}
+#theCalendar #circuits li .schedule dl dt {
+  float: left;
+  text-align: left;
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-size: 16px;
+  margin-left: 13px;
+}
+#theCalendar #circuits li .schedule dl dd {
+  margin: 0;
+  float: right;
+  text-align: right;
+  font-family: 'Seat Meta Normal Roman', Arial, Helvetica, sans-serif;
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-size: 16px;
+  margin-right: 10px;
+}
+#theCalendar #circuits li .schedule .bonito {
+  width: 242px;
+  margin: 0 auto;
+  background: #ffffff;
+  height: 2px;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 1px;
+  -webkit-border-bottom-left-radius: 1px;
+  -webkit-border-top-left-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 1px;
+  -moz-border-radius-bottomleft: 1px;
+  -moz-border-radius-topleft: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 1px;
+  border-bottom-left-radius: 1px;
+  border-top-left-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+}
+#theCalendar #circuits li.active {
+  display: block;
+}
+#theCalendar #circuits li#circuit1 {
+  /*background-image: url('../img/calendar/circuit1.jpg');*/
+}
+#theCalendar #circuits li#circuit2,
+#theCalendar #circuits li#circuit3,
+#theCalendar #circuits li#circuit4,
+#theCalendar #circuits li#circuit5,
+#theCalendar #circuits li#circuit6 {
+  /*background-image: url('../img/calendar/circuit1.jpg');*/
+}
+#theCalendar #menuCircuits {
+  display: block;
+  overflow: hidden;
+  border-bottom: 2px #ff4720 solid;
+  list-style: none outside none;
+}
+#theCalendar #menuCircuits li {
+  float: left;
+  width: 160px;
+  background-color: #ffffff;
+  text-align: center;
+  height: 60px;
+}
+#theCalendar #menuCircuits li a {
+  color: #42474c;
+  text-decoration: none;
+  font-family: 'Seat Meta Medium Roman', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  width: 159px;
+  border-right: 1px solid #c9c9c9;
+  height: 60px;
+  display: table-cell;
+  vertical-align: middle;
+}
+#theCalendar #menuCircuits li a .date,
+#theCalendar #menuCircuits li a .name {
+  font-family: 'Seat Meta Medium Roman', Arial, Helvetica, sans-serif;
+}
+#theCalendar #menuCircuits li:hover,
+#theCalendar #menuCircuits li.active {
+  background-color: #f4f4f4;
+}
+#theCalendar #menuCircuits li:hover a,
+#theCalendar #menuCircuits li.active a {
+  color: #ff4720;
+  height: 58px;
+  border-bottom: 2px #ff4720 solid;
+  border-right: none;
+  width: 160px;
+}
+#theCalendar #menuCircuits li.last a {
+  border-right: none;
+  width: 160px;
+}
+#theCalendar #sec_02 {
+  padding-bottom: 300px;
+  background: url('../img/calendar/backBottom.png') no-repeat bottom center transparent;
+  width: 100%;
+  border-bottom: 1px #ff4720 solid;
+}
+#theCalendar #sec_02 h1 {
+  margin-bottom: 28px;
+  margin-left: 27px;
+}
+#theCalendar #driversTeams {
+  width: 905px;
+  margin-left: 27px;
+  overflow: hidden;
+  display: block;
+  background: transparent;
+}
+#theCalendar #driversTeams h2,
+#theCalendar #driversTeams h3,
+#theCalendar #driversTeams h4 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  padding: 0;
+}
+#theCalendar #driversTeams .teamContainer {
+  display: inline-block;
+  float: left;
+  width: 270px;
+  height: 262px;
+  padding: 12px 0 0 12px;
+  border: 1px solid #f0f0f0;
+  border-bottom-color: #ff4720;
+  background: #fcfcfc;
+  margin-bottom: 32px;
+}
+#theCalendar #driversTeams .teamContainer.central {
+  margin: 0 26px 0 27px;
+}
+#theCalendar #driversTeams .teamContainer .title {
+  color: #ff4720;
+  font-size: 14px;
+  font-family: 'Seat Meta Normal Roman', Arial, Helvetica, sans-serif;
+}
+#theCalendar #driversTeams .teamContainer strong {
+  font-family: 'Seat Meta Normal Roman', Arial, Helvetica, sans-serif;
+  color: #1b1d1e;
+  font-size: 18px;
+  line-height: 27px;
+}
+#theCalendar #driversTeams .teamContainer strong a {
+  color: #1b1d1e;
+  font-family: 'Seat Meta Normal Roman', Arial, Helvetica, sans-serif;
+}
+#theCalendar #driversTeams .teamContainer .up {
+  height: 144px;
+  margin-bottom: 17px;
+  position: relative;
+}
+#theCalendar #driversTeams .teamContainer .up .team,
+#theCalendar #driversTeams .teamContainer .up .title,
+#theCalendar #driversTeams .teamContainer .up strong {
+  display: inline-block;
+  width: 126px;
+  float: left;
+  margin: 0 0 0 8px;
+}
+#theCalendar #driversTeams .teamContainer .up strong {
+  line-height: 20px;
+}
+#theCalendar #driversTeams .teamContainer .up strong.driverOption {
+  display: none;
+}
+#theCalendar #driversTeams .teamContainer .up strong.driverActive {
+  display: inline-block;
+}
+#theCalendar #driversTeams .teamContainer .up .team {
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 13px;
+  font-family: 'Seat Meta Medium Roman', Arial, Helvetica, sans-serif;
+  border: none;
+  border-left: none;
+  color: #1b1d1e;
+}
+#theCalendar #driversTeams .teamContainer .up .avatarContainer {
+  float: left;
+  position: relative;
+  z-index: 10;
+  width: 129px;
+  height: 140px;
+  display: inline-block;
+  left: 0;
+}
+#theCalendar #driversTeams .teamContainer .up .avatarContainer .driverPhoto {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  z-index: 15;
+}
+#theCalendar #driversTeams .teamContainer .up .avatarContainer .flag {
+  position: absolute;
+  top: 3px;
+  right: 6px;
+  display: block;
+  z-index: 20;
+}
+#theCalendar #driversTeams .teamContainer .up .avatarContainer.driverOption {
+  display: none;
+}
+#theCalendar #driversTeams .teamContainer .up .avatarContainer.driverActive {
+  display: inline-block;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers {
+  width: 129px;
+  overflow: hidden;
+  bottom: 3px;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  display: block;
+  background: #e8e8e8;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers li {
+  cursor: pointer;
+  height: 7px;
+  float: left;
+  display: inline-block;
+  background: #e8e8e8;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers li:hover {
+  background: #ff4720;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers li:last-child {
+  width: 34%;
+  float: right;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers li span {
+  display: block;
+  height: 7px;
+  width: 100%;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers li span.active {
+  background: #ff4720;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers.oneDriver li {
+  width: 100%;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers.twoDriver li {
+  width: 50%;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers.threeDriver li {
+  width: 43px;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers.threeDriver li:last-child {
+  width: 43px;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers.fourDriver li {
+  width: 25%;
+}
+#theCalendar #driversTeams .teamContainer .up .numDrivers.fiveDriver li {
+  width: 20%;
+}
+#theCalendar #driversTeams .teamContainer .bottom h3 {
+  margin: 0;
+}
+#theCalendar #driversTeams .teamContainer .bottom strong {
+  margin-bottom: 3px;
+  display: block;
+}

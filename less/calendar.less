@@ -1,0 +1,368 @@
+@import "globals.less";
+
+@width:							960px;
+@height:						342px;
+@colorWhite:						#ffffff;
+@colorRed:						#ff4720;
+@colorGrisClaro:					#ededed;
+@colorGrisClaro2:					#f4f4f4;
+@colorGrisOscurito:					#42474c;
+@colorGrisOscuro:					#1b1d1e;
+
+@fontFamilyBold:					'Seat Meta Bold Roman',Arial,Helvetica,sans-serif;
+@fontFamilyMedium:					'Seat Meta Medium Roman',Arial,Helvetica,sans-serif;
+@fontFamilyNormal:					'Seat Meta Normal Roman',Arial,Helvetica,sans-serif;
+
+#theCalendar{
+    .content.header{
+	margin-bottom: 					25px;
+    }
+    #main{
+	padding-bottom: 				300px;
+	background: 					url('../img/calendar/backBottom.png') no-repeat bottom center transparent;
+	border-bottom: 					1px @colorRed solid;
+    }
+    #circuits{
+	display: 					block;
+	width: 						100%;
+	overflow: 					hidden;
+	
+	li{
+	    @padding:					88px;
+	    @widthCircuits:				((@width - (@padding * 2)) / 2) - 4;
+	    display: 					none;
+	    float: 					left;
+	    width: 					@width - (@padding * 2);
+	    height: 					@height;
+	    background: 				center center transparent no-repeat;
+	    padding: 					0 @padding;
+	    position: 					relative;
+	    .title{
+		overflow: 				hidden;
+		width: 					@widthCircuits;
+		color: 					@colorWhite;
+		font-family: 				@fontFamilyBold;
+		display: 				inline-block;
+		float: 					left;
+		margin: 				36px 0 26px 0;
+		.date{
+		    font-size: 				53px;
+		    line-height: 			65px;
+		    float: 				left;
+		    border: 				none;
+		    width: 				100%;
+		    margin: 				0 0 0 0;
+		    padding: 				0;
+		}
+		.name{
+		    font-size: 				40px;
+		    margin-bottom: 			4px;
+		}
+		.alias{
+		    font-size: 				32px;
+		}
+	    } //title
+	    
+	    .records{
+		width: 					@widthCircuits;
+		display: 				block;
+		float: 					none;
+		font-family: 				@fontFamilyNormal;
+		.anti-alias;
+		font-size: 				18px;
+		line-height: 				20px;
+		color: 					@colorWhite;
+		//overflow: 				hidden;
+		dl{
+		    display: 				block;
+		    overflow: 				hidden;
+		    width: 				100%;
+		    margin-bottom: 			7px;
+		    dt{
+			margin-right: 			4px;
+		    }
+		    dt,dd{
+			display: 			inline-block;
+			float: 				left;
+		    }
+		}
+	    }
+	    
+	    .schedule{
+		.absoluteTopRight(35px,@padding);
+		//width: 					@widthCircuits;
+		width: 					250px;
+		h3{
+		    display: 				block;
+		    font-size: 				20px;
+		    line-height: 			30px;
+		    background: 			@colorRed;
+		    font-family: 			@fontFamilyBold;
+		    text-align: 			center;
+		    color: 				@colorWhite;
+		    padding: 				5px 0;
+		    border-bottom: 			1px solid @colorGrisClaro;
+		}
+		dl{
+		    background: 			@colorWhite;
+		    display: 				block;
+		    overflow: 				hidden;
+		    border-bottom: 			1px solid @colorGrisClaro;
+		    height: 				47px;
+		    line-height: 			50px;
+		    color: 				@colorGrisOscurito;
+		    .border-radiuses(0,1px,1px,0);
+		    dt,dl{
+			display: 			inline-block;
+		    }
+		    dt{
+			float: 				left;
+			text-align: 			left;
+			font-family: 			@fontFamilyBold;
+			.anti-alias;
+			font-size: 			16px;
+			margin-left: 			13px;
+		    }
+		    dd{
+			float: 				right;
+			text-align: 			right;
+			font-family: 			@fontFamilyNormal;
+			.anti-alias;
+			font-size: 			16px;
+			margin-right: 			10px;
+		    }
+		}
+		.bonito{
+		    width:				242px;
+		    margin: 				0 auto;
+		    background: 			@colorWhite;
+		    height: 				2px;
+		    .border-radiuses(0,1px,1px,0);
+		}
+	    }
+	    
+	    &.active{
+		display: 				block;
+	    }
+
+	    &#circuit1{
+		background-image: 			url('../img/calendar/circuit1.jpg');
+	    }
+	    &#circuit2{
+		background-image: 			url('../img/calendar/circuit2.png');
+	    }
+	} //li
+    }// circuits
+    #menuCircuits{
+	display: 					block;
+	overflow: 					hidden;
+	border-bottom: 					2px @colorRed solid;
+	@widthMenu:					160px;
+	@widthBorderLateral:				1px;
+	@heightMenu: 					60px;
+	@heightBottomBorder:				2px;
+	li{
+	    float: 					left;
+	    width: 					@widthMenu;
+	    background-color:				@colorWhite;
+	    text-align: 				center;
+	    height: 					@heightMenu;
+	    a{
+		color: 					@colorGrisOscurito;
+		text-decoration: 			none;
+		font-family: 				@fontFamilyMedium;
+		font-size: 				18px;
+		width: 					@widthMenu - @widthBorderLateral;
+		border-right: 				@widthBorderLateral solid #c9c9c9;
+		height: 				@heightMenu;
+		display: 				table-cell;
+		vertical-align: 			middle;
+		
+	    }
+	    &:hover, &.active{
+		background-color: 			@colorGrisClaro2;
+		a{
+		    color: 				@colorRed;
+		    height: 				@heightMenu - @heightBottomBorder;
+		    border-bottom: 			@heightBottomBorder @colorRed solid;
+		    border-right: 			none;
+		    width: 				@widthMenu;
+		}
+	    }
+	    &.last{
+		a{
+		    border-right: 			none;
+		    width: 				@widthMenu;
+		}
+	    }
+	}
+    }// menuCircuits
+    #sec_02{
+	h1{
+	    margin-bottom: 				28px;
+	    margin-left: 				27px;
+	}
+    } //#sec_02
+    #driversTeams{
+	h2, h3, h4{
+	    -webkit-margin-before: 0;
+	    -webkit-margin-after: 0;
+	    padding: 		0;
+	}
+	@widthDriversTeams:				905px;
+	width: 						@widthDriversTeams;
+	margin-left: 					27px;
+	overflow: 					hidden;
+	display: 					block;
+	background: 					transparent;
+	.teamContainer{
+	    @heightTeamContainer:			276px;
+	    @widthTeamContainer:			282px;
+	    @widhtBorderTeamContainer:			1px;
+	    @paddingTeamContainer:			12px;
+	    display: 					inline-block;
+	    float: 					left;
+	    width: 					@widthTeamContainer - @paddingTeamContainer;
+	    height: 					@heightTeamContainer - (@widhtBorderTeamContainer * 2) - @paddingTeamContainer;
+	    padding: 					@paddingTeamContainer 0 0 @paddingTeamContainer;
+	    border: 					@widhtBorderTeamContainer solid #f0f0f0;
+	    border-bottom-color: 			@colorRed;
+	    background: 				#fcfcfc;
+	    margin-bottom: 32px;
+	    &.central{
+		margin: 				0 26px 0 27px;
+	    }
+	    .title{
+		color: 					@colorRed;
+		font-size: 				14px;
+		font-family: 				@fontFamilyNormal;
+	    }
+	    strong{
+		font-family: 				@fontFamilyNormal;
+		color: 					@colorGrisOscuro;
+		font-size: 				20px;
+		line-height: 				27px;
+		a{
+		    color: 				@colorGrisOscuro;
+		}
+	    }
+	    .up{
+		height: 				144px;
+		margin-bottom: 				17px;
+		position: 				relative;
+		.team, .title, strong{
+		    display: 				inline-block;
+		    width: 				126px;
+		    float: 				left;
+		    margin-left: 			8px;
+		}
+		strong{
+		    &.driverOption{
+			display: 			none;
+		    }
+		    &.driverActive{
+			display: 			inline-block;
+		    }
+		}
+		.team{
+		    font-size: 				20px;
+		    line-height: 			24px;
+		    margin-bottom: 			13px;
+		    font-family: 			@fontFamilyMedium;
+		    border: 				none;
+		    border-left: 			none;
+		    color: 				@colorGrisOscuro;
+		}
+		
+		@widthAvatar:				129px;
+		.avatarContainer{
+		    float: 				left;
+		    position: 				relative;
+		    z-index: 				10;
+		    width: 				@widthAvatar;
+		    height: 				140px;
+		    display: 				inline-block;
+		    left: 				0;
+		    .driverPhoto{
+			.absoluteTopLeft(0,0);
+			z-index: 			15;
+		    }
+		    .flag{
+			.absoluteTopRight(3px,6px);
+			z-index: 			20;
+		    }
+		    &.driverOption{
+			display: 			none;
+		    }
+		    &.driverActive{
+			display: 			inline-block;
+		    }
+		}//avatarContainer
+		.numDrivers{
+		    width: 				@widthAvatar;
+		    overflow: 				hidden;
+		    bottom: 				3px;
+		    .absoluteBottomLeft(-3px,0);
+		    background: 			#e8e8e8;
+		    li{
+			cursor: 			pointer;
+			height: 			7px;
+			float: 				left;
+			display: 			inline-block;
+			background: 			#e8e8e8;
+			&:hover{
+			    background: 		@colorRed;
+			}
+			&:first-child{
+			    
+			}
+			&:last-child{
+			    width: 			34%;
+			    float: 			right;
+			}
+			span{
+			    display: 			block;
+			    height: 			7px;
+			    width: 			100%;
+			    &.active{
+			    	background: 		@colorRed;
+			    }
+			}
+		    }
+		    &.oneDriver{
+			li{
+			    width: 			100%;
+			}
+		    }
+		    &.twoDriver{
+			li{
+			    width: 			50%;
+			}
+		    }
+		    &.threeDriver{
+			li{
+			    width: 			33%;
+			}
+		    }
+		    &.fourDriver{
+			li{
+			    width: 			25%;
+			}
+		    }
+		    &.fiveDriver{
+			li{
+			    width: 			20%;
+			}
+		    }
+		}// numDrivers
+	    }//up
+	    .bottom{
+		strong{
+		    margin-bottom: 			3px;
+		    display: 				block;
+		}
+	    }//bottom
+	}//teamContainer
+    }//driversTeams
+
+}

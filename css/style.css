@@ -1,0 +1,651 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+h1 {
+  color: #ff4720;
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+  border-bottom: 1px solid #ff4720;
+  margin: 0 0 15px;
+  line-height: 37px;
+  font-size: 37px;
+  padding-bottom: 7px;
+  display: inline-block;
+}
+h2 {
+  color: #ff4720;
+  font-family: 'Seat Meta Medium Roman', Arial, Helvetica, sans-serif;
+  border-left: 1px solid #ff4720;
+  margin: 0 0 15px;
+  line-height: 28px;
+  font-size: 28px;
+  padding-left: 10px;
+  display: inline-block;
+}
+p {
+  color: #1b1d1e;
+  font-family: 'Seat Meta Normal Roman', Arial, Helvetica, sans-serif;
+  margin: 0 0 15px 0;
+}
+img[align="left"] {
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+img[align="right"] {
+  margin-left: 20px;
+  margin-bottom: 30px;
+}
+/* Position */
+.left {
+  float: left;
+  margin-right: 20px;
+}
+.right {
+  float: right;
+  margin-right: 20px;
+}
+.last {
+  margin: 0!important;
+}
+.alignCenter {
+  text-align: center;
+}
+.alignRight {
+  text-align: right;
+}
+/* Containers */
+.box {
+  display: block;
+}
+.section {
+  float: left;
+}
+.content {
+  float: left;
+  width: 100%;
+}
+/* Colour */
+.red {
+  color: #ff4720;
+}
+.white {
+  color: #ffffff;
+}
+.black {
+  color: #1b1d1e;
+}
+/*Width*/
+.w275 {
+  width: 275px;
+}
+.w300 {
+  width: 300px;
+}
+.w350 {
+  width: 350px;
+}
+.w400 {
+  width: 400px;
+}
+.w460 {
+  width: 460px;
+}
+.w500 {
+  width: 500px;
+}
+.w800 {
+  width: 800px;
+}
+#container {
+  width: 960px;
+  margin: 0 auto;
+}
+#container .box p a {
+  color: #FF4720;
+  font-family: 'Seat Meta Normal Roman', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: none;
+}
+#header {
+  background: #ffffff;
+  height: 37px;
+  border-bottom: 1px solid #e5e5e5;
+}
+#header img {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#header ul {
+  float: right;
+  list-style: none;
+}
+#header li {
+  float: left;
+  width: 160px;
+  border-left: 1px solid #c3c3c3;
+  text-align: center;
+}
+#header li:last-child {
+  border-right: 1px solid #c3c3c3;
+}
+#header li.selected {
+  background-color: #F4F4F4;
+}
+#header li a {
+  line-height: ;
+  font-size: 15px;
+  color: #5f676e;
+  text-decoration: none;
+  line-height: 37px;
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+}
+#header li a:hover {
+  color: #ff4720;
+  text-decoration: underline;
+}
+#header li.selected a {
+  color: #ff4720;
+  text-decoration: underline;
+}
+#main {
+  float: left;
+}
+/* Sections */
+#eurocup #sec_01 {
+  /*background:url('../img/eurocap/bg_sec01.jpg') no-repeat top left transparent;*/
+
+  /*padding-top:390px;*/
+
+  /*height:671px;*/
+
+  padding-left: 25px;
+  /*padding-right:25px;*/
+
+}
+#eurocup #sec_01 .content.header {
+  margin-left: -25px;
+  margin-bottom: 30px;
+}
+#eurocup #sec_02 {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+}
+#eurocup #sec_03 {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+#eurocup #sec_03 .content.timeline {
+  padding-bottom: 45px;
+  background: url('../img/bg_timeline.gif') center top repeat-y transparent;
+}
+#eurocup #sec_03 .content.timeline .box.left {
+  margin-right: 0px;
+}
+#eurocup #sec_03 .content.timeline .box.left.timeitem {
+  margin-left: 5px;
+  margin-right: 5px;
+  padding-top: 12px;
+}
+#eurocup #sec_03 .content .box img.timeline {
+  display: block;
+  margin: 0 auto;
+}
+#eurocup #sec_04 {
+  background: url('../img/eurocup/bg_sec04.jpg') no-repeat top left transparent;
+  height: 595px;
+  border-bottom: 1px solid #ff4720;
+  padding-left: 230px;
+  padding-right: 230px;
+  padding-top: 15px;
+}
+#eurocup #sec_04 a.button {
+  border: 3px solid #FFFFFF;
+  color: #FFFFFF;
+  display: inline-block;
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-top: 300px;
+  padding: 15px 60px;
+}
+#eurocup #sec_04 a.button:hover {
+  background-color: #ffffff;
+  color: #ff4720;
+}
+#thecar #sec_01 {
+  /*background:url('../img/thecar/bg_sec01.jpg') no-repeat top left transparent;*/
+
+  /*padding-top:390px;*/
+
+  /*height:671px;*/
+
+  /*padding-left:90px;*/
+
+  /*padding-right:90px;*/
+
+  margin-bottom: 35px;
+}
+#thecar #sec_01 .content {
+  /*
+	padding-left:90px;
+	padding-right:90px;
+	margin-bottom:35px;
+	*/
+
+  /*float:left;*/
+
+  padding-left: 90px;
+  padding-right: 90px;
+  width: 780px;
+}
+#thecar #sec_01 .content.header {
+  margin-left: -90px;
+  margin-bottom: 35px;
+}
+#thecar #sec_02 {
+  background: url('../img/thecar/bg_sec02.jpg') no-repeat top left transparent;
+  height: 453px;
+  border-bottom: 1px solid #ff4720;
+  padding-left: 230px;
+  padding-right: 230px;
+  padding-top: 45px;
+}
+#thecar #sec_02 .content {
+  /*
+	padding-left:230px;
+	padding-right:230px;
+	padding-top:45px;
+	*/
+
+}
+#thecar #sec_03 {
+  /*height:940px;*/
+
+  width: 920px;
+  border-bottom: 1px solid #ff4720;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 60px;
+}
+#thecar #sec_03 .content {
+  /*
+	padding-left:20px;
+	padding-top:60px;
+	*/
+
+}
+#thecar #sec_03 .content img[align="left"] {
+  margin-right: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  clear: left;
+}
+#thecar #sec_03 .content img[align="right"] {
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  clear: right;
+}
+#thecar #sec_03 .content a.video {
+  margin-left: -20px;
+  display: table;
+}
+#thecar #sec_03 .content a.video img {
+  display: block;
+  margin-top: 20px;
+}
+#thecar #sec_03 .content h2 {
+  display: table;
+  margin-top: 30px;
+}
+#thecar #sec_04 {
+  padding-top: 35px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 1px solid #ff4720;
+}
+#thecar #sec_04 h1 {
+  margin-bottom: 40px;
+}
+/*
+#thecar #sec_04 .box.gallery img {
+	cursor:pointer;
+}
+*/
+#footer {
+  padding-top: 35px;
+  padding-bottom: 20px;
+  float: left;
+  background-color: #fafafa;
+  width: 100%;
+}
+#footer p {
+  font-family: 'Seat Meta Medium Roman', Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  display: inline-block;
+  margin-left: 90px;
+}
+#footer p a {
+  color: #1b1d1e;
+}
+#footer a.button {
+  border: 3px solid #ff4720;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: #ff4720;
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  margin-right: 90px;
+  float: right;
+}
+#footer a.button:hover {
+  background-color: #ff4720;
+  color: #ffffff;
+}
+#social {
+  float: left;
+  text-align: center;
+  width: 100%;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+#social ul {
+  list-style: none;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+#social ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+#social p {
+  font-family: 'Seat Meta Medium Roman', Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  color: #d9d9d9;
+}
+#social p a {
+  color: #ff4720;
+  text-decoration: underline;
+}
+#social #social_links li a {
+  background: 0 -27px no-repeat transparent;
+  height: 27px;
+  width: 27px;
+  display: block;
+}
+#social #social_links li a:hover {
+  background-position: 0 0;
+}
+#social #social_links li a.social_facebook {
+  background-image: url('../img/facebook.png');
+}
+#social #social_links li a.social_twitter {
+  background-image: url('../img/twitter.png');
+}
+#social #social_links li a.social_google {
+  background-image: url('../img/google.png');
+}
+#social #social_links li a.social_pinterest {
+  background-image: url('../img/pinterest.png');
+}
+#back {
+  border-top: 1px solid #F2F2F2;
+  float: left;
+  padding-bottom: 40px;
+  padding-top: 40px;
+  text-align: center;
+  width: 100%;
+}
+#back a.button {
+  border: 3px solid #FF4720;
+  color: #FF4720;
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding: 15px 30px;
+}
+#back a.button:hover {
+  background-color: #ff4720;
+  color: #ffffff;
+}
+#legals {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  float: left;
+  color: #D9D9D9;
+  font-size: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#legals p {
+  color: #D9D9D9;
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+/* Video player */
+#video_player.kewego {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+#video_player.kewego .video-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%!important;
+  height: 100%!important;
+}
+#video_player.kewego .video-js .vjs-tech {
+  position: relative;
+  width: 100%;
+}
+#video_player.kewego .video-js.vjs-default-skin {
+  color: #ffffff;
+}
+#video_player.kewego .video-js.vjs-default-skin .vjs-play-progress,
+#video_player.kewego .video-js.vjs-default-skin .vjs-volume-level {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAP0lEQVQIHWWMAQoAIAgDR/QJ/Ub//04+w7ZICBwcOg5FZi5iBB82AGzixEglJrd4TVK5XUJpskSTEvpdFzX9AB2pGziSQcvAAAAAAElFTkSuQmCC") repeat scroll -50% 0 #ff4720;
+}
+#video_player.kewego .video-js.vjs-default-skin .vjs-load-progress {
+  background: none repeat scroll 0 0 #ffffff;
+}
+#video_player.kewego .video-js.vjs-default-skin .vjs-poster {
+  background-size: 100% 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+#video_player.kewego .video-js.vjs-default-skin .vjs-poster img {
+  width: 100%;
+  height: 100%;
+}
+#video_player.kewego .video-js.vjs-default-skin .vjs-big-play-button {
+  /*display: none;*/
+
+  background-color: #000000;
+  border: 0.1em solid #ffffff;
+  border-radius: 0.3em;
+  color: #ffffff;
+  height: 2em;
+  left: 50%;
+  margin-left: -1.5em;
+  margin-top: -1em;
+  top: 50%;
+  width: 3em;
+}
+#video_player.kewego .video-js.vjs-default-skin .vjs-big-play-button:before {
+  line-height: 2em;
+}
+#video_player.kewego .video-js.vjs-default-skin:hover .vjs-big-play-button,
+#video_player.kewego .video-js.vjs-default-skin .vjs-big-play-button:focus {
+  background-color: #000000;
+  border-color: #ffffff;
+  box-shadow: 0em 0em 0.75em #ffffff;
+}
+#video_player.kewego .vjs-fullscreen {
+  padding-top: 0px;
+}
+#video_player.youtube {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+#video_player.youtube iframe,
+#video_player.youtube object,
+#video_player.youtube embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.nofont {
+  font-family: Arial, Verdana, Geneva, sans-serif !important;
+  /*font-weight: bold;*/
+
+}
+h2.nofont {
+  font-size: 28px;
+}
+#header li a.nofont,
+#footer p.nofont,
+#footer a.button.nofont,
+#back a.button.nofont,
+#eurocup #sec_04 a.button.nofont {
+  font-weight: bold;
+}
+.centerBox {
+  margin: 0 auto;
+  clear: both;
+}
+/*******************new roberto*************************/
+.anti-alias {
+  font-smooth: always;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+}
+.comunArrows {
+  width: 0;
+  height: 0;
+  position: relative;
+  line-height: 0px;
+}
+#eurocup .comunSec {
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+  margin-bottom: 25px;
+  position: relative;
+}
+#eurocup #sec_end01 {
+  padding-bottom: 417px;
+  background: url('../img/eurocup/bg_sec_end01.jpg') no-repeat transparent center bottom;
+  border-bottom: 2px solid #ff4720;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+  margin-bottom: 25px;
+  position: relative;
+}
+#eurocup #sec_end01 .playButton {
+  position: absolute;
+  bottom: 148px;
+  width: 800px;
+  margin: 0 auto;
+}
+#eurocup #sec_end01 .playButton a {
+  display: inline-block;
+}
+#eurocup #sec_end01 .playButton img {
+  display: block;
+  margin: 0 auto 23px auto;
+}
+#eurocup #sec_end01 .playButton .button {
+  display: block;
+  color: #FFFFFF;
+  font-family: 'Seat Meta Bold Roman', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 43px;
+  height: 43px;
+  padding: 0 56px;
+  border: 3px solid #FFFFFF;
+}
+#eurocup #sec_end01 .playButton .button:hover {
+  color: #ff4720;
+  background-color: #FFFFFF;
+}
+#eurocup #sec_end02 {
+  position: relative;
+  width: 940px;
+  margin: 0 10px;
+}
+#eurocup #sec_end02 p {
+  margin: 0 auto 25px auto;
+}
+#eurocup #sec_end02 #containerSlider {
+  overflow: hidden;
+}
+#eurocup #sec_end02 #containerSlider .buttonSlider {
+  position: absolute;
+  top: 300px;
+  width: 22px;
+  height: 50px;
+  background: url('../img/eurocup/sliders/spriteNextPrev.png') no-repeat transparent;
+  z-index: 40;
+  cursor: pointer;
+}
+#eurocup #sec_end02 #containerSlider .next {
+  right: 10px;
+  background-position: left bottom;
+}
+#eurocup #sec_end02 #containerSlider .next:hover {
+  background-position: left top;
+}
+#eurocup #sec_end02 #containerSlider .prev {
+  display: none;
+  left: 10px;
+  background-position: right bottom;
+}
+#eurocup #sec_end02 #containerSlider .prev:hover {
+  background-position: right top;
+}
+#eurocup #sec_end02 #containerSlider ul {
+  width: 1200%;
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+}
+#eurocup #sec_end02 #containerSlider ul li {
+  float: left;
+}
+#eurocup #sec_end02 #containerSlider ul li img {
+  width: 100%;
+}
+#eurocup #sec_end02 #containerSlider ul.miniSlider li {
+  width: 136px;
+  height: 59px;
+  border: 2px solid #FFFFFF;
+  margin-right: 20px;
+  cursor: pointer;
+}
+#eurocup #sec_end02 #containerSlider ul.miniSlider li.active {
+  border-color: #ff4720;
+}

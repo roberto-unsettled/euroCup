@@ -1,0 +1,60 @@
+/*
+    Lightbox Core Style:
+    The following CSS is consistent between example themes and should not be altered.
+*/
+/*#lightbox, #lboxOverlay, #lboxWrapper{position:absolute; top:0; left:0; z-index:9999; overflow:hidden;}*/
+#lightbox, #lboxOverlay, #lboxWrapper{position:absolute; top:0; left:0; z-index:9999;}
+#lboxWrapper {max-width:none;}
+#lboxOverlay{position:fixed; width:100%; height:100%;}
+/*#lboxMiddleLeft, #lboxBottomLeft{clear:left; display: none;}*/
+#lboxMiddleLeft, #lboxBottomLeft, #lboxBottomRight, #lboxBottomCenter, #lboxMiddleRight, #lboxTopLeft, #lboxTopCenter, #lboxTopRight{display: none;}
+#lboxContent{position:relative;}
+#lboxLoadedContent{overflow:auto; -webkit-overflow-scrolling: touch;}
+#lboxTitle{margin:0;}
+#lboxLoadingOverlay, #lboxLoadingGraphic{position:absolute; top:0; left:0; width:100%; height:100%;}
+#lboxPrevious, #lboxNext, #lboxClose, #lboxSlideshow{cursor:pointer;}
+.lboxPhoto{float:left; margin:auto; border:0; display:block; max-width:none; -ms-interpolation-mode:bicubic;}
+.lboxIframe{width:100%; height:100%; display:block; border:0;}
+#lightbox, #lboxContent, #lboxLoadedContent{box-sizing:content-box; -moz-box-sizing:content-box; -webkit-box-sizing:content-box;}
+
+/* 
+    User Style:
+    Change the following styles to modify the appearance of Lightbox.  They are
+    ordered & tabbed in a way that represents the nesting of the generated HTML.
+*/
+#lboxOverlay{background:#000;}
+#lightbox{outline:0;position: fixed; display: block;}
+    /*#lboxContent{margin-top:20px;background:#000;}*/
+    #lboxContent{} 
+        .lboxIframe{background:#fff;}
+        #lboxError{padding:50px; border:1px solid #ccc;}
+        /*#lboxLoadedContent{border:5px solid #000; background:#fff;}*/
+        /*#lboxTitle{position:absolute; top:-20px; left:0; color:#ccc;}*/
+	#lboxTitle{position:relative; margin-top: -5%; padding-left: 2%; padding-right: 2%; color:#fff;}
+        #lboxTitle .title {font-family: 'Seat Meta Black Roman', Arial, Verdana, Geneva,sans-serif; font-size: 15%; line-height:90%; margin-bottom: 3%;}
+        #lboxTitle .subtitle {font-family: 'Seat Meta Normal Roman', Arial, Verdana, Geneva, sans-serif; font-size: 7%; line-height:100%;}
+        /*#lboxCurrent{position:absolute; top:-20px; right:0px; color:#ccc;}*/
+        #lboxCurrent{display:none;}
+        #lboxLoadingGraphic{background:url(../img/loading.gif) no-repeat center center;}
+
+        /* these elements are buttons, and may need to have additional styles reset to avoid unwanted base styles */
+        #lboxPrevious, #lboxNext, #lboxSlideshow, #lboxClose {border:0; padding:0; margin:0; overflow:visible; width:auto; background:none; }
+		#lboxPrevious:focus, #lboxNext:focus, #lboxSlideshow:focus, #lboxClose:focus {outline:0;}
+        
+        /* avoid outlines on :active (mouseclick), but preserve outlines on :focus (tabbed navigating) */
+        #lboxPrevious:active, #lboxNext:active, #lboxSlideshow:active, #lboxClose:active {outline:0;}
+        
+        #lboxSlideshow{position:absolute; top:-20px; right:90px; color:#fff;}
+        /*#lboxPrevious{position:absolute; top:50%; left:5px; margin-top:-32px; background:url(../img/controls.png) no-repeat top left; width:28px; height:65px; text-indent:-9999px;}*/
+        #lboxPrevious{left:-10%; position:absolute; top:50%; width:5%;}
+        #lboxPrevious img {width: 100%;}
+        /*#lboxPrevious:hover{background-position:bottom left;}*/
+        /*#lboxNext{position:absolute; top:50%; right:5px; margin-top:-32px; background:url(../img/controls.png) no-repeat top right; width:28px; height:65px; text-indent:-9999px;}*/
+        #lboxNext{left:105%; position:absolute; top:50%; width:5%;}
+        #lboxNext img {width: 100%;}
+        /*#lboxNext:hover{background-position:bottom right;}*/
+        /*#lboxClose{position:absolute; top:5px; right:5px; display:block; background:url(../img/controls.png) no-repeat top center; width:38px; height:19px; text-indent:-9999px;}*/
+        #lboxClose{left:96.5%; position:absolute; top:-7%; width:7%;}
+        #lboxClose img{width: 100%;}
+        
+        /*#lboxClose:hover{background-position:bottom center;}*/
